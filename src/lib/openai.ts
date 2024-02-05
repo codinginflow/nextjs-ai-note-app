@@ -12,7 +12,7 @@ export default openai;
 
 export async function getEmbedding(text: string) {
   const response = await openai.embeddings.create({
-    model: "text-embedding-ada-002",
+    model: "text-embedding-3-small",
     input: text,
   });
 
